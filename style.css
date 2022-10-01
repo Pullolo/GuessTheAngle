@@ -1,0 +1,76 @@
+:root {
+    --border: #000000;
+}
+
+@font-face {
+    font-family: nice;
+    src: url(files/Pacifico-Regular.ttf);
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+}
+
+div.canvas{
+    display: flex;
+    justify-content: center;
+}
+
+div.in{
+    display: flex;
+    justify-content: center;
+}
+
+div.guesses{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    color: rgb(255, 115, 0);
+    font-size: 60px;
+    font-family: nice;
+    text-align: center;
+    text-shadow: 2px 0 var(--border), -2px 0 var(--border), 0 2px var(--border), 0 -2px var(--border),
+               1px 1px var(--border), -1px -1px var(--border), 1px -1px var(--border), -1px 1px var(--border);
+}
+
+input{
+    background-color: darkgrey;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 30px;
+    padding: 4px;
+}
+
+button{
+    background-color: darkgrey;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: rgb(218, 218, 218);
+    transition: all 0.3s;
+}
+
+button:active{
+    background-color: rgb(134, 134, 134);
+    transition: all 0.3s;
+}
+
+div.guess{
+    width: 76px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(46, 46, 46);
+}
